@@ -4,7 +4,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-image: url(/lesson-8/demoShop/patt.png);
+    background-image: url(patt.png);
 }
 .headarea {
     background-color: rgba(255, 255, 255, 0.75);
@@ -151,15 +151,14 @@ display: block;
 .products::after {
 content: "";
 position: absolute;
-background-image: url(/lesson-8/demoShop/icondown.svg);
+background-image: url(icondown.svg);
 width: 15px;
 height: 15px;
 top: 18px;
 right: 8px;
 }
 .products:hover::after {
-background-image: url();
-background-image: url(/lesson-8/demoShop/iconup.svg);
+background-image: url(iconup.svg);
 content: "";
 position: absolute;
 width: 15px;
