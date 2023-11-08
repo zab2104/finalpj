@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;  
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-image: url(/lesson-7/demoShop/patt.png);
+}
+.headarea {
+    background-color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+.headmenu {
+    width: 1200px;
+    height: 50px;
+    display: flex;
+    margin: 25px 0;
+      
+}
+.basket {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: relative;
+    margin: 5px;
+   
+}
+.basket img {
+    width: 22px;
+    height: 22px;
+    margin: 9px;
+}
+.basketitems {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #2c71b8;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.menu a {
+    display: block;
+    text-decoration: none;
+    font-size: 21px;
+    color: #77a3d1;
+    }
+.mainmenu li {
+    list-style: none;
+    width: 142px;
+    height: 50px;
+    border-left: 1px solid #2c71b8;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+}
+.menu ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.col-3 {
+    display: flex;
+    width: 25%;
+    height: 50px;
+}
+.logo {
+    padding: 8px;
+}
+.logo img {
+ width: 175px;
+ height: 42px;
+}
+.searchform {
+    width: 200px;
+    height: 40px;
+    position: relative;
+    margin: 5px 30px;
+
+    
+}
+.search input{
+    width: 200px;
+    height: 40px;
+    font-size: 21px;
+    border: 1px solid #2c71b8;
+    background-color:transparent;
+}
+::placeholder {
+    color: #77a3d1;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 20px;
+
+}
+.lastmenu {
+    border-left: 1px solid #2c71b8;
+}
+.searchimg {
+    width: 30px;
+    height: 30px;
+    background-color: #2c71b8;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    
+}
+.searchimg img {
+    width: 14px;
+    height: 14px;
+    margin: 8px;
+}
+.mainmenu li:hover {
+    background-color: #2c71b8;
+    color: white;
+}
+.submenu {
+    flex-direction: column;
+    width: 284px;
+    display: none;
+    
+}
+
+.submenu li{
+    width: 284px;
+    text-align-last: left;
+    border: none; 
+    margin: -1px;
+    display: none;
+      
+}
+.submenu a:hover {
+    background-color: white;
+    color: #2c71b8;
+}
+.submenu a{
+    background-color: #2c71b8;
+    color: white;
+}
+
+.products:hover> .submenu li{
+display: block;
+}
+.products::after {
+content: "";
+position: absolute;
+background-image: url(/lesson-7/demoShop/icondown.svg);
+width: 15px;
+height: 15px;
+top: 18px;
+right: 8px;
+}
+.products:hover::after {
+background-image: url();
+background-image: url(/lesson-7/demoShop/iconup.svg);
+content: "";
+position: absolute;
+width: 15px;
+height: 15px;
+top: 18px;
+right: 8px;
+}
