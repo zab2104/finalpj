@@ -4,7 +4,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-image: url(patt.png);
+    background-image: url(img/patt.png);
+    display: flex;
+    flex-direction: column;
 }
 .headarea {
     background-color: rgba(255, 255, 255, 0.75);
@@ -118,7 +120,7 @@ body {
     height: 14px;
     margin: 8px;
 }
-.mainmenu li:hover {
+.mainmenu li:hover a {
     background-color: #2c71b8;
     color: white;
 }
@@ -138,13 +140,14 @@ body {
     display: none;
       
 }
-.submenu a:hover {
+.submenu li:hover a {
     background-color: white;
     color: #2c71b8;
 }
 .submenu a{
     background-color: #2c71b8;
     color: white;
+    padding-left: 30px;
 }
 
 .products:hover> .submenu li{
@@ -153,14 +156,14 @@ display: block;
 .products::after {
 content: "";
 position: absolute;
-background-image: url(icondown.svg);
+background-image: url(img/icondown.svg);
 width: 15px;
 height: 15px;
 top: 18px;
 right: 8px;
 }
 .products:hover::after {
-background-image: url(iconup.svg);
+background-image: url(img/iconup.svg);
 content: "";
 position: absolute;
 width: 15px;
@@ -168,3 +171,251 @@ height: 15px;
 top: 18px;
 right: 8px;
 }
+.slide {
+    height: 400px;
+    background-color: rgba(35, 90, 147, 0.5 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+.slidezone  {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+.slidezone h1 {
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    font-family: roboto;
+    font-weight: 100;}
+    .arrow {
+        font-size: 100px;
+        color: white;
+    }
+    .underslide {
+        
+        display: flex;
+        justify-content: center;
+        
+    }
+.underslidezone {
+    width: 1200px;
+    display: flex;
+    
+       
+}
+    .choosemenu {
+        width: 25%;
+        height: 844px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .itemsmenu {
+        width: 75%;
+    }
+    .footer {
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        line-height: 100px;
+        font-size: 21px;
+    }
+    .pgsel {
+        padding: 30px 8px 20px 8px;
+    }
+    .pgsel a {
+        color: white;
+        text-decoration: none;
+    }
+    .pgsel a:last-child {
+       text-decoration: underline;
+    }
+    .headitems {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        font-size: 30px;
+        color: white;
+        padding: 0 8px;
+        font-weight: bold;
+    }
+    .sortby {
+        padding-left: 8px;
+        background-color: #2b71b8;
+        width: 270px;
+        height: 40px;
+        color: white;
+        font-size: 21px;
+        font-family: roboto;
+    }
+    .sortform {
+        border: 1px solid white;
+        margin-right: 9px;
+    }
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        
+    
+           }
+    .itembox {
+        width: calc(33% - 16px);
+        height: 650px;
+        border: 1px solid white;
+       margin: 8px;
+    }
+    .itemimg {
+        display: flex;
+        height: 180px;
+        background-color: rgba(255, 255, 255, 0.75);
+        position: relative;
+    }
+    .box1 .itemimg {
+         background-image: url(img/monitor.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .box2 .itemimg {
+         background-image: url(img/consol.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .box3 .itemimg {
+         background-image: url(img/watch.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .box4 .itemimg {
+         background-image: url(img/laptop.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .box5 .itemimg {
+         background-image: url(img/ipod.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .box6 .itemimg {
+         background-image: url(img/smartphone.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .box7 .itemimg {
+         background-image: url(img/tablet.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .box8 .itemimg {
+         background-image: url(img/consol.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .box9 .itemimg {
+         background-image: url(img/watch.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .fimg {
+        border: 1px solid #2c71b8; 
+        background-image: url(img/qblue.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .fimg:hover {
+        background-color: #2b71b8;
+        background-image: url(img/qwhite.png);
+    }
+   
+    .simg {
+        border: 1px solid #2c71b8; 
+        background-image: url(img/heartblue.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+    .simg:hover {
+        background-color: #2b71b8;
+        background-image: url(img/heartwhite.png);
+    }
+    .itemdscrp {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 20px;
+    }
+    .itemdscrp h2 {
+        font-size: 30px;
+        font-weight: bold;
+        
+    }
+    .itemdscrp p {
+        font-size: 21px;
+        margin: 10px 0px ;
+         }
+    .fword {
+        font-weight: bold;
+    }
+    .itemprice {
+        font-size: 48px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .kop {
+        font-size: 25px;
+    
+    }
+    .itembtn button{
+     width: 210px;
+     height: 50px;
+     margin-top: 15px;
+     font-weight: bold;
+     color: white;
+     font-size: 21px;
+        }
+    .itembtn {
+        display: flex;  
+        align-items: center;
+        flex-direction: column;
+    }
+    .md {
+        background-color: transparent;
+        border: 1px solid white;
+    }
+    .md:hover {
+        background-color: rgba(255, 255, 255, 0.75);
+       
+    }
+    .addc {
+        background-color: rgba(255, 255, 255, 0.25);
+        border: none;
+        position: relative;
+    }
+    .addc:hover {
+        background-color: rgba(255, 255, 255, 0.75);
+       
+    }
+    .addc::after {
+        content: "";
+        position: absolute;
+        background-image: url(img/bascetwhite.png);
+        width: 15px;
+        height: 15px;
+        top: 16px;
+        right: 10px;    
+    }
