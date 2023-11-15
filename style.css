@@ -243,12 +243,15 @@ right: 8px;
     }
     .sortby {
         padding-left: 8px;
-        background-color: #2b71b8;
+        background-color: transparent;
         width: 270px;
         height: 40px;
         color: white;
         font-size: 21px;
         font-family: roboto;
+    }
+    .sortby option {
+        background-color: #2b71b8;
     }
     .sortform {
         border: 1px solid white;
