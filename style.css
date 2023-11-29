@@ -211,6 +211,49 @@ right: 8px;
         width: 25%;
         height: 844px;
         background-color: rgba(255, 255, 255, 0.1);
+        border-right: 1px solid white;
+        padding-left: 28px;
+        padding-right: 28px;
+        color: white;
+        font-size: 21px;
+    }
+    .choosemenu label::before {
+       content: "";
+       display: block;
+       width: 10px;
+       height: 10px;
+       border: 1px solid white;
+    }
+    .choosemenu input[type="checkbox"]{
+        display: none;
+    }
+    .choosemenu input:checked + label::before {
+        background-color: white;
+    }
+    .choosemenu div {
+        margin-top: 32px;
+    }
+    .choosemenu div:nth-child(4) {
+        text-align: center;
+        margin-top: 10px;;
+    }
+    .choosemenu div:last-child {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   .choosebtn {
+    width: 210px;
+    height: 50px;
+    font-weight: bold;
+    color: white;
+    font-size: 21px;
+    background-color: #2c71b8;
+    border: 1px solid white;
+    }
+    .choosemenu form {
+        padding-top: 15px;
     }
     .itemsmenu {
         width: 75%;
@@ -397,7 +440,7 @@ right: 8px;
         flex-direction: column;
     }
     .md {
-        background-color: transparent;
+        background-color: #2c71b8;
         border: 1px solid white;
     }
     .md:hover {
@@ -422,3 +465,7 @@ right: 8px;
         top: 16px;
         right: 10px;    
     }
+    
+    
+ 
+ 
